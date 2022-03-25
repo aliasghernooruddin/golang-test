@@ -25,7 +25,7 @@ func TestValidity(str string) bool {
 		} else {
 			word_total++
 		}
-		if num_total-word_total == 1 || num_total == word_total {
+		if num_total == word_total || num_total-word_total == 1 {
 			continue
 		} else {
 			return false
